@@ -63,7 +63,6 @@ namespace B3.Desafio.Tests
             var amount = 1000.0;
             var months = 12;
             var expected = 1123.0820949653053;
-;
 
             // Act
             var result = Calculate.CalculateCDB(amount, months);

@@ -18,6 +18,5 @@ export class InvestmentService {
 }
 
 export interface InvestmentResponse {
-  grossInvestment: number;
-  netInvestment: number;
+  value: number;
 }
