@@ -1,8 +1,8 @@
-# Investment Calculator
+# Calcular CDB
 
 ## Descrição
 
-Este projeto é uma aplicação web para calcular o resultado bruto e líquido de um investimento com base em um valor monetário e um prazo em meses. O projeto utiliza um frontend Angular e um backend ASP.NET Core.
+Este projeto é uma aplicação web para calcular o valor final de um investimento com base em um valor monetário e um prazo em meses. O projeto utiliza um frontend Angular e um backend ASP.NET Core.
 
 ## Estrutura do Projeto
 
@@ -27,15 +27,12 @@ Este projeto é uma aplicação web para calcular o resultado bruto e líquido d
 
 1. **Clone o repositório:**
 
-   ```bash
-   git clone https://github.com/username/investment-calculator.git
-   cd investment-calculator/InvestmentCalculatorAPI
+   git clone https://github.com/AlexRdeFreitas/B3.Desafio.git
 
 ## Uso
-Abra a aplicação Angular no navegador: http://localhost:4200.
+Abra a aplicação Angular no navegador: https://localhost:44483/.
 Preencha o formulário com um valor monetário positivo e um prazo em meses maior que 1.
-Clique em "Calcular Investimento" para obter o resultado bruto e líquido.
-Veja os resultados exibidos na mesma página.
+Clique em "Calcular Investimento" para obter o valor final.
 
 ## Licença
 Este projeto está licenciado sob a MIT License.
