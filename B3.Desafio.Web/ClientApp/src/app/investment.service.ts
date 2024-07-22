@@ -18,5 +18,5 @@ export class InvestmentService {
 }
 
 export interface InvestmentResponse {
-  value: number;
+  finalValue: number;
 }

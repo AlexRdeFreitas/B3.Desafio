@@ -2,6 +2,6 @@
 {
     public class InvestmentResponse
     {
-        public double Value { get; set; }
+        public double FinalValue { get; set; }
     }
 }

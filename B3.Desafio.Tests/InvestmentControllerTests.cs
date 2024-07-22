@@ -53,7 +53,7 @@ namespace B3.Desafio.Tests
             var okResult = Assert.IsType<OkObjectResult>(result);
             var response = Assert.IsType<InvestmentResponse>(okResult.Value);
 
-            Assert.Equal(1123.0820949653053, response.Value, 2);
+            Assert.Equal(1123.0820949653053, response.FinalValue, 2);
         }
 
         [Fact]

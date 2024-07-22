@@ -20,7 +20,7 @@ namespace B3.Desafio.API.Controllers
 
             var result = new InvestmentResponse
             {
-                Value = resultValue
+                FinalValue = resultValue
             };
 
             return Ok(result);
