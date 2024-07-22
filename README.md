@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto é uma aplicação web para calcular o valor futuro de um investimento com base em um valor monetário e um prazo em meses. O projeto utiliza um frontend Angular e um backend ASP.NET Core.
+Este projeto é uma aplicação web para calcular o valor final de um investimento com base em um valor monetário e um prazo em meses. O projeto utiliza um frontend Angular e um backend ASP.NET Core.
 
 ## Estrutura do Projeto
 
@@ -32,7 +32,7 @@ Este projeto é uma aplicação web para calcular o valor futuro de um investime
 ## Uso
 Abra a aplicação Angular no navegador: https://localhost:44483/.
 Preencha o formulário com um valor monetário positivo e um prazo em meses maior que 1.
-Clique em "Calcular Investimento" para obter o valor futuro.
+Clique em "Calcular Investimento" para obter o valor final.
 
 ## Licença
 Este projeto está licenciado sob a MIT License.
