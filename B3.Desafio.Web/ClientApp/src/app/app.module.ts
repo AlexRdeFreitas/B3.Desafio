@@ -4,14 +4,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { InvestmentFormComponent } from './investment-form/investment-form.component';
-import { InvestmentResultComponent } from './investment-result/investment-result.component';
+import { B3CdbFormComponent } from './investment-form/investment-form.component';
+import { B3CdbResultComponent } from './investment-result/investment-result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InvestmentFormComponent,
-    InvestmentResultComponent
+    B3CdbFormComponent,
+    B3CdbResultComponent
   ],
   imports: [
     BrowserModule,

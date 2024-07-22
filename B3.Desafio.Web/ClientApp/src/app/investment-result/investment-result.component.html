@@ -1,3 +1,9 @@
 <div *ngIf="investmentResult">
-  <p>Valor Final: {{ investmentResult.value | currency }}</p>
+
+  <div>
+    <label  style="font-weight: bold; text-align: center" for="valorFinal">Valor Final: R{{ investmentResult.value | currency }}</label>
+  </div>
 </div>
+
+
+

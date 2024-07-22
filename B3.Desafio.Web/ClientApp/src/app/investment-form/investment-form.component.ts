@@ -7,7 +7,7 @@ import { InvestmentService, InvestmentResponse } from '../investment.service';
   templateUrl: './investment-form.component.html',
   styleUrls: ['./investment-form.component.css']
 })
-export class InvestmentFormComponent {
+export class B3CdbFormComponent {
   investmentForm: FormGroup;
   investmentResult: InvestmentResponse | null = null;
 
