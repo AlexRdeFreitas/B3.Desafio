@@ -1,0 +1,40 @@
+.result-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  .result-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .result-container p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: #444;
+  }
+
+    .result-container p span {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+@media (max-width: 768px) {
+  .result-container {
+    padding: 1rem;
+  }
+
+    .result-container h2 {
+      font-size: 1.25rem;
+    }
+
+    .result-container p {
+      font-size: 1rem;
+    }
+}

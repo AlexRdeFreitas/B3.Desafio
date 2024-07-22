@@ -1,0 +1,4 @@
+<div *ngIf="investmentResult">
+  <p>Resultado Bruto: {{ investmentResult.grossInvestment | currency }}</p>
+  <p>Resultado Líquido: {{ investmentResult.netInvestment | currency }}</p>
+</div>

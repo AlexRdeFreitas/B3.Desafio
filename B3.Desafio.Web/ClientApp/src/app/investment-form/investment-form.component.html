@@ -1,0 +1,21 @@
+<form [formGroup]="investmentForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="amount">Valor Monetário:</label>
+    <input id="amount" formControlName="amount" type="number">
+    <div *ngIf="investmentForm.get('amount')?.invalid && investmentForm.get('amount')?.touched">
+      Valor monetário deve ser positivo.
+    </div>
+  </div>
+
+  <div>
+    <label for="months">Prazo em Meses:</label>
+    <input id="months" formControlName="months" type="number">
+    <div *ngIf="investmentForm.get('months')?.invalid && investmentForm.get('months')?.touched">
+      Prazo deve ser maior que 1 mês.
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="investmentForm.invalid">Calcular Investimento</button>
+</form>
+
+<app-investment-result [investmentResult]="investmentResult"></app-investment-result>
