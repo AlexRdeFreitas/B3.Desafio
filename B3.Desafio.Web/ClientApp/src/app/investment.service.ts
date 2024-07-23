@@ -11,12 +11,13 @@ export class InvestmentService {
 
   constructor(private http: HttpClient) { }
 
-  calculateInvestment(amount: number, months: number): Observable<InvestmentResponse> {
-    const body = { amount, months };
+  calculateInvestment(initialValue: number, months: number): Observable<InvestmentResponse> {
+    const body = { initialValue, months };
     return this.http.post<InvestmentResponse>(this.apiUrl, body);
   }
 }
 
 export interface InvestmentResponse {
-  finalValue: number;
+  grossValue: number;
+  netValue: number;
 }

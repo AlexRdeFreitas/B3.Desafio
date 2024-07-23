@@ -13,14 +13,14 @@ export class B3CdbFormComponent {
 
   constructor(private fb: FormBuilder, private investmentService: InvestmentService) {
     this.investmentForm = this.fb.group({
-      amount: [null, [Validators.required, Validators.min(0.01)]],
+      initialValue: [null, [Validators.required, Validators.min(0.01)]],
       months: [null, [Validators.required, Validators.min(2)]]
     });
   }
 
   onSubmit(): void {
-    const { amount, months } = this.investmentForm.value;
-    this.investmentService.calculateInvestment(amount, months).subscribe(result => {
+    const { initialValue, months } = this.investmentForm.value;
+    this.investmentService.calculateInvestment(initialValue, months).subscribe(result => {
       this.investmentResult = result;
     });
   }

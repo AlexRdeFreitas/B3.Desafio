@@ -1,7 +1,8 @@
 ﻿namespace B3.Desafio.API.Commands
 {
-    public class InvestmentResponse
+    public class InvestmentResult
     {
-        public double FinalValue { get; set; }
+        public double GrossValue { get; set; }
+        public double NetValue { get; set; }
     }
 }

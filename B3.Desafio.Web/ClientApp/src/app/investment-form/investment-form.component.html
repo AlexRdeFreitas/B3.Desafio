@@ -1,8 +1,8 @@
 <form [formGroup]="investmentForm" (ngSubmit)="onSubmit()">
   <div>
-    <label for="amount">Valor Monetário:</label>
-    <input id="amount" formControlName="amount" type="number">
-    <div *ngIf="investmentForm.get('amount')?.invalid && investmentForm.get('amount')?.touched">
+    <label for="initialValue">Valor Monetário:</label>
+    <input id="initialValue" formControlName="initialValue" type="number">
+    <div *ngIf="investmentForm.get('initialValue')?.invalid && investmentForm.get('initialValue')?.touched">
       Valor monetário deve ser positivo.
     </div>
   </div>

@@ -2,20 +2,21 @@
 {
     public static class Calculate
     {
-        private static double percentCdi = 0.009;
-        private static double percentTb = 1.08;
-
-        public static double CalculateCDB(double amount, int months)
+        public static double GetTaxRate(int months)
         {
-            double result = amount;
-
-            for (int i = 0; i < months; i++)
+            if (months <= 6)
             {
-                result *= 1 + percentCdi * percentTb;
+                return 0.225;
             }
-
-            return result;
+            if (months <= 12)
+            {
+                return 0.20;
+            }
+            if (months <= 24)
+            {
+                return 0.175;
+            }
+            return 0.15;
         }
-
     }
 }
