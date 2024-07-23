@@ -29,7 +29,7 @@ Este projeto é uma aplicação web para calcular o valor final de um investimen
 
    git clone https://github.com/AlexRdeFreitas/B3.Desafio.git
 
-## Como Executar Back-End e Front
+## Como Executar Back-End e Front-End
 1. **Abra a solution**
    1. **Clique com botão direito na solution e em seguida no Set Startup Projects**
    2. **Seleciona a opção "Multiple Startup projects"**
