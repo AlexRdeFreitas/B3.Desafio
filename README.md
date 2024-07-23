@@ -29,10 +29,14 @@ Este projeto é uma aplicação web para calcular o valor final de um investimen
 
    git clone https://github.com/AlexRdeFreitas/B3.Desafio.git
 
-## Uso
-Abra a aplicação Angular no navegador: https://localhost:44483/.
-Preencha o formulário com um valor monetário positivo e um prazo em meses maior que 1.
-Clique em "Calcular Investimento" para obter o valor final.
+## Como Executar Back-End e Front
+1. **Abra a solution**
+   1. **Clique com botão direito na solution e em seguida no Set Startup Projects**
+   2. **Seleciona a opção "Multiple Startup projects"**
+      1. **Selecione o projeto B3.Desafio.API e B3.Desafio.Web** em seguida em "Aplicar"e "OK"
+2. **Agora Clique em "Star" na barra principal**
+3. **Desta forma tanto o back-end e o front-end vão subir.**
+4. **Em seguida acesse a tela no browser configurado com padrão na sua estação de travalho , informe os valores e cliente em "Calcular Invertimento", os valores Bruto e Liquido serão escritos na tela**
 
 ## Licença
 Este projeto está licenciado sob a MIT License.
