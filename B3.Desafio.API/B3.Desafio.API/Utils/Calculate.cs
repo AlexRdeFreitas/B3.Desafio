@@ -2,21 +2,46 @@
 {
     public static class Calculate
     {
-        public static double GetTaxRate(int months)
+
+        private const double CDI = 0.009;
+        private const double TB = 1.08;
+
+        public static double CalculateFinalValue(double initialValue, int months)
         {
+            double finalValue = initialValue;
+
+            for (int i = 0; i < months; i++)
+            {
+                finalValue *= (1 + (CDI * TB));
+            }
+
+            return finalValue;
+        }
+
+        // Method to calculate the tax
+        public static double CalculateTax(double initialValue, double finalValue, int months)
+        {
+            double earnings = finalValue - initialValue;
+            double taxRate = 0.0;
+
             if (months <= 6)
             {
-                return 0.225;
+                taxRate = 0.225;  // 22.5%
             }
-            if (months <= 12)
+            else if (months <= 12)
             {
-                return 0.20;
+                taxRate = 0.20;  // 20%
             }
-            if (months <= 24)
+            else if (months <= 24)
             {
-                return 0.175;
+                taxRate = 0.175;  // 17.5%
             }
-            return 0.15;
+            else
+            {
+                taxRate = 0.15;  // 15%
+            }
+
+            return earnings * taxRate;
         }
     }
 }

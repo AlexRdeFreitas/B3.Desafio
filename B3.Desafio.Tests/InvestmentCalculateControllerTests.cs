@@ -38,8 +38,8 @@ namespace B3.Desafio.Tests
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
             var response = Assert.IsType<InvestmentResult>(okResult.Value);
 
-            Assert.Equal(1059.7556770148981, response.GrossValue, 2);
-            Assert.Equal(821.31064968654607, response.NetValue, 2);
+            Assert.Equal(1059.76, response.GrossValue, 2);
+            Assert.Equal(1046.31, response.NetValue, 2);
         }
 
 
@@ -56,8 +56,8 @@ namespace B3.Desafio.Tests
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
             var response = Assert.IsType<InvestmentResult>(okResult.Value);
 
-            Assert.Equal(1123.0820949653053, response.GrossValue, 2);
-            Assert.Equal(898.4656759722443, response.NetValue, 2);
+            Assert.Equal(1123.08, response.GrossValue, 2);
+            Assert.Equal(1098.47, response.NetValue, 2);
         }
         [Fact]
         public void CalculateInvestmentUntil24_ValidInput_ReturnsOkResult()
@@ -72,8 +72,8 @@ namespace B3.Desafio.Tests
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
             var response = Assert.IsType<InvestmentResult>(okResult.Value);
 
-            Assert.Equal(1261.3133920316586, response.GrossValue, 2);
-            Assert.Equal(1040.5835484261183, response.NetValue, 2);
+            Assert.Equal(1261.31, response.GrossValue, 2);
+            Assert.Equal(1215.58, response.NetValue, 2);
         }
         [Fact]
         public void CalculateInvestmentUntil36_ValidInput_ReturnsOkResult()
@@ -88,8 +88,8 @@ namespace B3.Desafio.Tests
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
             var response = Assert.IsType<InvestmentResult>(okResult.Value);
 
-            Assert.Equal(1416.5584867307102, response.GrossValue, 2);
-            Assert.Equal(1204.0747137211038, response.NetValue, 2);
+            Assert.Equal(1416.56, response.GrossValue, 2);
+            Assert.Equal(1354.07, response.NetValue, 2);
         }
 
 
